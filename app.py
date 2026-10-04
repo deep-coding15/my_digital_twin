@@ -8,11 +8,11 @@ import os
 
 load_dotenv(override=True)
 
-MODEL_NAME = "qwen2.5:7b"
+MODEL_NAME = "claude-3-5-haiku-20241022"  # Replace with your desired model name
 
-openai = OpenAI (
-    api_key=os.getenv('OLLAMA_API_KEY'),
-    base_url=os.getenv('OLLAMA_BASE_URL')
+client = OpenAI(
+    api_key=os.getenv("ANTHROPIC_API_KEY"),
+    base_url="https://api.anthropic.com/v1/",
 )
 
 system = [{"role": "system", "content": TWIN_SYSTEM_PROMPT}]
