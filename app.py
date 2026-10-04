@@ -10,7 +10,7 @@ load_dotenv(override=True)
 
 MODEL_NAME = "claude-3-5-haiku-20241022"  # Replace with your desired model name
 
-client = OpenAI(
+openai = OpenAI(
     api_key=os.getenv("ANTHROPIC_API_KEY"),
     base_url="https://api.anthropic.com/v1/",
 )
