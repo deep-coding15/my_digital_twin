@@ -8,7 +8,7 @@ import os
 
 load_dotenv(override=True)
 
-MODEL_NAME = "claude-3-5-haiku-20241022"  # Replace with your desired model name
+MODEL_NAME = "claude-haiku-4-5-20251001"  # Replace with your desired model name
 
 openai = OpenAI(
     api_key=os.getenv("ANTHROPIC_API_KEY"),
